@@ -13,9 +13,68 @@
 # •	A valid letter grade can be either uppercase or lowercase.
 # •	If an invalid value is entered, display a warning message.
 
+#Student Name:  Mathew Akunyili
 
 def main():
     # YOUR CODE STARTS HERE, each line must be indented (one tab)
+    # dDeclare variables
+    modify = 0.3
+
+    print("Grade Point Calculator")
+    print("")
+    print("Valid letter grades that can be entered: A, B, C, D, F")
+    print("Valid grade modifiers are +, - or nothing.")
+    print("All letter grades except F can include a + or - symbol.")
+    print("Calculated grade point value cannot exceed 4.0.")
+    print("")
+    grade = input("Please enter a letter grade: ").upper()
+    modifier = input("Please enter a modifier (+, - or nothing): ")
+    if grade == "A" and modifier == "+":
+        numericvalue = 4.0
+        print("The numeric value is:",numericvalue)
+    elif grade == "A" and modifier == "":
+        numericvalue = 4.0
+        print("The numeric value is:",numericvalue)
+    elif grade == "A" and modifier == "-":
+        numericvalue = 4.0 - modify
+        print("The numeric value is:",numericvalue)
+    elif grade == "B" and modifier == "+":
+        numericvalue = 3.0 + modify
+        print("The numeric value is:",numericvalue)
+    elif grade == "B" and modifier == "":
+        numericvalue = 3.0
+        print("The numeric value is:",numericvalue)
+    elif grade == "B" and modifier == "-":
+        numericvalue = 3.0 - modify
+        print("The numeric value is:",numericvalue)
+    elif grade == "C" and modifier == "+":
+        numericvalue = 2.0 + modify
+        print("The numeric value is:",numericvalue)
+    elif grade == "C" and modifier == "":
+        numericvalue = 2.0
+        print("The numeric value is:",numericvalue)
+    elif grade == "C" and modifier == "-":
+        numericvalue = 2.0 - modify
+        print("The numeric value is:",numericvalue)
+    elif grade == "D" and modifier == "+":
+        numericvalue = 1.0 + modify
+        print("The numeric value is:",numericvalue)
+    elif grade == "D" and modifier == "":
+        numericvalue = 1.0
+        print("The numeric value is:",numericvalue)
+    elif grade == "D" and modifier == "-":
+        numericvalue = 1.0 - modify
+        print("The numeric value is:",numericvalue)
+    elif grade == "F" and modifier == "":
+        numericvalue = 0
+        print("The numeric value is:",numericvalue)
+    else:
+        print("You entered an invalid letter grade")
+    
+
+    
+    
+
 
 
 
